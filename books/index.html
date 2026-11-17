@@ -9,12 +9,20 @@
 <nav><a href="../">Home</a><a href="../running/">Running</a><a href="../books/" class=on>Books</a><a href="../writing/">Writing</a><a href="../diaries/">Mom diaries</a><a href="../index.html#contact">Contact</a></nav></header>
 <main id="top">
 <section class="pagehero"><p class="eyebrow">Books</p><h1>12 read in 2026, one in progress.</h1><p class="lead">This reading habit was long lost, and this year I'm picking it back up. Crime and thrillers, plus some Malayalam.</p></section>
-<section id="reco"><h2>Recommended reads</h2><p class="lead2">Three from this year's list I'd hand to a friend.</p>
-<ul class="booklist">
-<li class="book"><a class="cov" href="https://www.goodreads.com/book/show/40097951-the-silent-patient" target="_blank" rel="noopener"><img src="4-the-silent-patient.jpg" alt="The Silent Patient book cover" loading="lazy"></a><span class="tag">Recommended</span><h3><a href="https://www.goodreads.com/book/show/40097951-the-silent-patient" target="_blank" rel="noopener">The Silent Patient</a></h3><p>Alex Michaelides</p><p class="rev">Loved it.</p></li>
-<li class="book"><a class="cov" href="https://www.goodreads.com/book/show/33797669-mullappoo-niramulla-pakalukal" target="_blank" rel="noopener"><img src="6-jasmine-days.jpg" alt="Mullappoo Niramulla Pakalukal book cover" loading="lazy"></a><span class="tag">Recommended</span><h3><a href="https://www.goodreads.com/book/show/33797669-mullappoo-niramulla-pakalukal" target="_blank" rel="noopener">Mullappoo Niramulla Pakalukal (Jasmine Days)</a></h3><p>Benyamin</p><p class="rev">A favourite.</p></li>
-<li class="book"><a class="cov" href="https://www.goodreads.com/book/show/211639060" target="_blank" rel="noopener"><img src="14-never-lie.jpg" alt="Never Lie book cover" loading="lazy"></a><span class="tag">Recommended</span><h3><a href="https://www.goodreads.com/book/show/211639060" target="_blank" rel="noopener">Never Lie</a></h3><p>Freida McFadden</p><p class="rev">Great. I never saw the ending coming.</p></li>
-</ul></section>
+<section id="reco"><h2>Recommend me a book</h2><p class="lead2">What should I read next? Send a book my way - the good ones join the pile once I've had a look.</p>
+<form class="recform" action="https://formsubmit.co/anjumathewmappilath@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Book recommendation from anjumathew.in">
+<input type="hidden" name="_next" value="https://anjumathew.in/books/?sent=1">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="_honey" style="display:none">
+<div class="frow"><label>Book title<input type="text" name="Book title" required placeholder="The one you couldn't put down"></label>
+<label>Author<input type="text" name="Author" placeholder="Who wrote it"></label></div>
+<div class="frow"><label>Link <span class="opt">(optional)</span><input type="url" name="Link" placeholder="Goodreads, Amazon, anywhere"></label>
+<label>Your name <span class="opt">(optional)</span><input type="text" name="Recommended by" placeholder="So I can thank you"></label></div>
+<button class="btn" type="submit">Send it my way</button>
+</form>
+<p class="sent">Thank you! Your recommendation is on its way to me.</p>
+</section>
 <section id="list"><h2>2026 reading list</h2>
 <ul class="booklist">
 <li class="book"><a class="cov" href="https://www.goodreads.com/book/show/195967140-the-teacher" target="_blank" rel="noopener"><img src="3-the-teacher.jpg" alt="The Teacher book cover" loading="lazy"></a><span class="tag">Reading now</span><h3><a href="https://www.goodreads.com/book/show/195967140-the-teacher" target="_blank" rel="noopener">The Teacher</a></h3><p>Freida McFadden</p></li>
@@ -33,4 +41,5 @@
 </ul></section>
 </main>
 <footer>&copy; 2026 Anju Mathew &middot; Kochi, India</footer>
+<script>if(location.search.indexOf("sent=1")>-1){document.querySelector(".sent").style.display="block";document.querySelector(".recform").style.display="none"}</script>
 </body></html>
