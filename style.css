@@ -68,7 +68,7 @@ h2{border-left:5px solid var(--accent);padding-left:14px}
 .tile.t3{background:#fbe9f1}.tile.t3 span{color:#c2467c}
 .tile.t4{background:#e6f0fa}.tile.t4 span{color:#2b6cb0}
 .tile:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
-.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .photo{aspect-ratio:4/3;border-radius:16px;background:repeating-linear-gradient(45deg,var(--tint),var(--tint) 12px,#fff 12px,#fff 24px);border:2px dashed var(--accent);display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:var(--ink2);font-size:14px}
 .medals{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .medal{background:#fff;border:1px solid var(--line);border-radius:50% 50% 18px 18px / 30% 30% 18px 18px;padding:28px 18px;text-align:center}
@@ -79,3 +79,7 @@ h2{border-left:5px solid var(--accent);padding-left:14px}
 .book h3{font-size:19px}.book p{margin:4px 0;color:var(--ink2);font-size:14px}
 .stat{display:inline-block;background:var(--tint);color:var(--accent);border-radius:999px;padding:4px 14px;font-size:14px;margin:0 8px 8px 0}
 @media(max-width:720px){.tiles,.photos,.medals,.booklist{grid-template-columns:1fr}}
+/* photos real */
+.photo.real{background:none;border:none;padding:0;display:block;aspect-ratio:auto}
+.photo.real img{width:100%;border-radius:16px;display:block;aspect-ratio:4/5;object-fit:cover}
+.photo.real .cap{font-size:13px;color:var(--ink2);margin-top:6px}
